@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+<style>
+a.active1
+{
+    background-color:black;
+    text-decoration:none;
+     color:white;
+    padding:10px;
+    font-size:20px;
+    border:none;
+    width: 80%;
+ }
+body
+{
+
+background-color:#ADD8E6;
+}
+</style>
+    
+  <script language="JavaScript">
+    function showInput() {
+       document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+	document.getElementById('display2').innerHTML =
+		    document.getElementById("user_input2").value;
+document.getElementById('display3').innerHTML =
+		    document.getElementById("user_input3").value;
+document.getElementById('display4').innerHTML =
+		    document.getElementById("user_input4").value;
+document.getElementById('display5').innerHTML =
+		    document.getElementById("user_input5").value;
+    }
+  </script>
+
+  </head>
+<body>
+<br/>
+
+<a class="active1" href="terms.html" target="_top">Terms and Conditions</a>
+     <a class="active1" href="About.html" target="_top">About</a>
+     <a class="active1" href="Cars.html" target="_top">All Cars</a>
+     <a class="active1" href="index.html" target="_top">Home</a>
+<br/>
+
+<b/r>
+<br/>
+<center>
+  <form>
+    <label><b>Name</b></label>
+    <input type="text" name="message" id="user_input" ><br/><br/>
+
+    <label><b>PhoneNo</b></label>
+    <input type2="text" name="message" id="user_input2"><br/><br/> 
+<label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+dd-mm-yyyy</label><br/>
+
+<label><b>Issuedate</b></label>
+<input type3="text" name="message" id="user_input3" <br/><br/>
+</br>
+<label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp dd-mm-yyyy</label>
+<br/
+<label><b>Returndate</b></label>
+    <input type4="text" name="message" id="user_input4"><br/><br/>
+<label><b>AadharNumber</b></label>
+    <input type5="text" name="message" id="user_input5"><br/></br>
+Car:
+  <input type="radio" name="car" value="Hyundai i10">Hyundai i10
+  <input type="radio" name="car2" value="Audi R8">Audi R8
+  <input type="radio" name="car3" value="BMW 530i">BMW 530i
+<input type="radio" name="car4" value="Discovery">Discovery
+<input type="radio" name="car5" value="Chevrolet Camero">Chevrolet Camero
+<input type="radio" name="car6" value="FordMustang">FordMustang
+
+  </form>
+<br>
+  <input type="submit" onclick="showInput();"><br/></br>
+  <label>Your Input: </label><br>
+  <label>Name is:</label><p><span id='display'></span></p>
+  <label>Phone No  is:</label><p><span id='display2'></span></p>
+ <label>Issuedate  is:</label><p><span id='display3'></span></p>
+ <label>Returndate is:</label><p><span id='display4'></span></p>
+ <label>AadharNumber is:<p><span id='display5'></span></p>
+</center>
+</body>
+</html>
